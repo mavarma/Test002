@@ -1,0 +1,19 @@
+{
+  "notes": [
+    {
+      "id": 3,
+      "title": "My First Note",
+      "description": "Hello Team ! It is a first note !"
+    },
+    {
+      "id": 5,
+      "title": "Second Reminder",
+      "description": "What are you doing ? Have you atteneded the today's meeting ?"
+    },
+    {
+      "id": 6,
+      "title": "Third Notification",
+      "description": "I am good, how are you ?"
+    }
+  ]
+}
