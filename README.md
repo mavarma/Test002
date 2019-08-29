@@ -32,7 +32,9 @@ Feauteres:
 
 3. On clicking of "Folders List/Notes List" ----> It displays the existing notes list, which grabs from the database.json file, it shows on middle panel
 
-4. This middle panel, it shows the available Notes list, Where the User can do various operations like: a. can add a note list
+4. This middle panel, it shows the available Notes list, Where the User can do various operations like: 
+
+      a. can add a note list
 
       b. can edit/update a note list
 
@@ -45,5 +47,9 @@ Feauteres:
       f. default, we are showing some limited description for a note in the middle panel, If the User wants to see the full description, then he/she has to select his desired row, then it's entire data will be displayed in right mose panel
 
       g. All these note/note titles are shown in alphabetical order
+
+
+Note: Added couple of screenshots of the developed application in the Screenshots folder for your reference.
+
 
 
