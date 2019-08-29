@@ -7,12 +7,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MiddleComponent } from './middle/middle.component';
 import { RightComponent } from './right/right.component';
-import { AddUserComponent } from './add-user/add-user.component';
 
 
 const routes: Routes = [
-  { path: 'add-user', component: AddUserComponent },
-  { path: 'list-user', component: MiddleComponent },
+  
   {
     path: 'list', component: MiddleComponent,
     children: [

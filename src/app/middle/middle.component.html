@@ -3,7 +3,7 @@
 
 <div class="middle">
 	<div class="list1">
-	<h2>Notes List:</h2>
+	<h4>Notes List:</h4>
 		<input class="searchTextInput" type="text" name="search" [(ngModel)]="searchText"
 			placeholder="Search..."><span class="glyphicon glyphicon-search searchTextIcon"></span>
 		<table class="table table-bordered">
@@ -13,7 +13,7 @@
 					(ngBind)="emp.title" (click)="show(emp.title)"
 					[class.active]="emp.title == selectedRow">
 					<td><a>
-							<h3>{{emp.title}}</h3>
+							<h4 title="click here to show the full title description">{{emp.title}}</h4>
 					</a></td>
 					<td>
 						<p>{{emp.description | limitTo:15}}</p>
@@ -35,9 +35,9 @@
 				placeholder="Please enter your notes description" class="form-control"
 				[(ngModel)]="employeeService.currentEmployee.description">
 				
-			<button class="btn btn-primary btn-lg"
+			<button class="btn btn-primary" title="click here to add note/folder title"
 				(click)="createEmployee(employeeService.currentEmployee)">
-				<i class="glyphicon glyphicon-plus"></i>Add Note/Folder
+				<i class="glyphicon glyphicon-plus"></i>Add
 			</button>
 		</div>
 		<router-outlet></router-outlet>

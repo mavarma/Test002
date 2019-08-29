@@ -1,29 +1,20 @@
 <!-- Modification Details:
 1. This html page used to show Sidenav or Leftmost panel content in the dashboard -->
 
+<button (click)="toggleOpenClose()" class="btn btn-default showToggleButton">
+    {{toggleButtonName}}
+</button>
+<ng-container *ngIf="open">
 <div class="sidenav">
 	<ul>
 		<li><a routerLink="/list">
-				<h3>
+				<h4 title="Click here to show the note list">
 					<span class="glyphicon glyphicon-folder-close"></span> Folders List/Notes List
-				</h3>
+				</h4>
 		</a></li>
 
 	</ul>
 	
-	<!-- <div class="emp-form">
-			<input placeholder="Please enter your notes title" class="form-control"
-				[(ngModel)]="employeeService.currentEmployee.title"> 
-				
-				<input
-				placeholder="Please enter your notes description" class="form-control"
-				[(ngModel)]="employeeService.currentEmployee.description">
-				
-			<button class="btn btn-primary"
-				(click)="createEmployee(employeeService.currentEmployee)">
-				<i class="glyphicon glyphicon-plus"></i>Add Note
-			</button>
-		</div> -->
 		
 	<button type="button" class="btn btn-success newfolder"
 		(click)="onSubmit()">
@@ -31,3 +22,4 @@
 	</button>
 
 </div>
+</ng-container>

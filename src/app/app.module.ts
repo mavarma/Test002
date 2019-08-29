@@ -20,7 +20,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeService } from './model/employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TruncatePipe } from './exponential-strength.pipe';
-import { AddUserComponent } from './add-user/add-user.component';
 import { FilterPipe} from './filter.pipe';
 import { SortPipe } from './sort.pipe';
 @NgModule({
@@ -31,7 +30,6 @@ import { SortPipe } from './sort.pipe';
     MiddleComponent,
     RightComponent,
     TruncatePipe,
-    AddUserComponent,
     FilterPipe,
     SortPipe
   ],

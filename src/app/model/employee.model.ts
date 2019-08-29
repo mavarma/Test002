@@ -1,6 +1,6 @@
 /*
 * Modification Details: 
-*  1. This page is having the actula model properties to add/edit/delete in the dashboard
+*  1. This page is having the actual model properties to add/edit/delete in the dashboard, taking model name as Employee to have a note
 *
 */
 

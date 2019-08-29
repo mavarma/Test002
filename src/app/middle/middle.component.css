@@ -9,7 +9,7 @@
     margin-top: 60px;
     /* position: absolute; */
     float: left;
-    font-size: 20px;
+    font-size: 12px;
 }
 .list1 {
     width:37%;
@@ -45,5 +45,6 @@ ul li {
 }
 .searchTextIcon{
 	float: right;
-	top: -25px;
+    top: -18px;
+    left: -5px;
 }
