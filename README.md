@@ -1,7 +1,9 @@
 # NoteApp
 
 Description: 
------------- It is a demo application to demonstrate the Basic Notes application, which is built on Windows machine, having the main CRUD operations as per the User requirements.
+------------ 
+
+It is a demo application to demonstrate the Basic Notes application, which is built on Windows machine, having the main CRUD operations as per the User requirements.
 
 Environment:
 -----------
@@ -44,4 +46,4 @@ Feauteres:
 
       g. All these note/note titles are shown in alphabetical order
 
-      
+
