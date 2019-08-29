@@ -1,3 +1,9 @@
+/*
+* Modification Details:
+* 1. This is the main service class used to grab the actual and do the required operations(create/update/delete) in the dashboard from the required json file
+*
+*/
+
 import { Injectable } from '@angular/core';
 import { Employee } from 'src/app/model/employee.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -11,12 +17,9 @@ const headerOption = {
   providedIn: 'root'
 })
 export class EmployeeService {
-
   public searchText : string;
-
   mockUrl: string = 'http://localhost:3000/notes';
   allEmployee: Employee[];
-//searchText;
   currentEmployee: Employee = {
     id: null,
     title: '',
@@ -45,8 +48,6 @@ export class EmployeeService {
   }
 
   updateEmployee(employee: Employee): Observable<Employee> {
-
     return this.http.put<Employee>(this.mockUrl + '/' + employee.id, employee, headerOption);
-
   }
 }

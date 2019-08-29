@@ -1,3 +1,8 @@
+/*
+*Modifcation Details:
+* 1. This component used to show the data for Middle panel 
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmployeeService } from '../model/employee.service';
@@ -12,23 +17,16 @@ export class MiddleComponent implements OnInit {
   // router: any;
   
   public details: object = [];
+  selectedRow : String;
   constructor(private route: ActivatedRoute, private router: Router, private employeeService: EmployeeService) { }
 
   ngOnInit() {
     this.getAllEmployee();
-
-
-
-
   }
 
   getAllEmployee() {
     this.employeeService.getAllEmployee();
   }
-
-  addUser(): void {
-    this.router.navigate(['add-user']);
-  };
 
   createEmployee(currentEmployee: Employee) {
     if (currentEmployee.id === null) {
@@ -49,19 +47,11 @@ export class MiddleComponent implements OnInit {
 
   }
 
-
-  // updateEmployee1(employee: Employee) {
-  //   if (confirm("Do you want to update required notes ?")) {
-  //     this.employeeService.currentEmployee = Object.assign({}, employee);
-  //   }
-  // }
-
   updateEmployee(employee: Employee) {
     this.employeeService.updateEmployee(employee).subscribe(
       (data) => {
         this.employeeService.currentEmployee = Object.assign({}, employee);
       });
-    //alert("Your notes removed successfully !");
   }
 
   deleteEmployee(id: number) {
@@ -69,7 +59,6 @@ export class MiddleComponent implements OnInit {
       (data) => {
         this.getAllEmployee();
       });
-    //alert("Your notes removed successfully !");
   }
   showDetails() {
     this.router.navigate(['link'], { relativeTo: this.route });
@@ -80,8 +69,6 @@ export class MiddleComponent implements OnInit {
   show(title: string) {
     let obj = this.employeeService.allEmployee.filter(m => m.title == title);
     this.details = obj;
+    this.selectedRow = title;
   }
-
-
-
 }

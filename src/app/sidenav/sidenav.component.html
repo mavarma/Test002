@@ -1,14 +1,33 @@
-<div class="sidenav">
-    <ul>
-        <li><a routerLink="/list">
-                <h3><span class="glyphicon glyphicon-folder-close"></span> Folder</h3>
-            </a></li>
-        <!-- <li><a routerLink="/list2">list2</a></li>
-        <li><a routerLink="/list3">list3</a></li> -->
+<!-- Modification Details:
+1. This html page used to show Sidenav or Leftmost panel content in the dashboard -->
 
-    </ul>
-    <button type="button" class="btn btn-success newfolder" (click)="onSubmit()"><span
-            class="glyphicon glyphicon-plus-sign"></span>
-        NewFolder</button>
+<div class="sidenav">
+	<ul>
+		<li><a routerLink="/list">
+				<h3>
+					<span class="glyphicon glyphicon-folder-close"></span> Folders List/Notes List
+				</h3>
+		</a></li>
+
+	</ul>
+	
+	<!-- <div class="emp-form">
+			<input placeholder="Please enter your notes title" class="form-control"
+				[(ngModel)]="employeeService.currentEmployee.title"> 
+				
+				<input
+				placeholder="Please enter your notes description" class="form-control"
+				[(ngModel)]="employeeService.currentEmployee.description">
+				
+			<button class="btn btn-primary"
+				(click)="createEmployee(employeeService.currentEmployee)">
+				<i class="glyphicon glyphicon-plus"></i>Add Note
+			</button>
+		</div> -->
+		
+	<button type="button" class="btn btn-success newfolder"
+		(click)="onSubmit()">
+		<span class="glyphicon glyphicon-plus-sign"></span> NewFolder
+	</button>
 
 </div>

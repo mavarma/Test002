@@ -1,3 +1,9 @@
+/*
+* Modification Details:
+* 1. This is the custom Pipe class to define/search the entered text by the User to show on view page
+*
+*/
+
 import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'filter'

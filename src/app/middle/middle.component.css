@@ -1,3 +1,8 @@
+/*
+ Modification Details:
+ 1. This css styles used for Middle panel content
+ */
+
 .middle {
     width: 80%;
     margin-left: 20%; 
@@ -28,4 +33,17 @@ ul li {
     /* position: fixed; */
     padding: 20px;
     box-sizing: border-box;
+}
+
+.table tr.active td {
+  background-color:gray !important;
+  color: white;
+}
+
+.searchTextInput{
+	width: 100%; 
+}
+.searchTextIcon{
+	float: right;
+	top: -25px;
 }

@@ -1,3 +1,8 @@
+/*
+* Modifcation Details:
+* 1. This file used to have the required routing navigation(s) for the dashboard to access. 
+*/
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MiddleComponent } from './middle/middle.component';
@@ -6,13 +11,10 @@ import { AddUserComponent } from './add-user/add-user.component';
 
 
 const routes: Routes = [
-  // { path: 'list', component: MiddleComponent },s
-  // { path: 'list2', component: MiddleComponent },
   { path: 'add-user', component: AddUserComponent },
   { path: 'list-user', component: MiddleComponent },
   {
     path: 'list', component: MiddleComponent,
-
     children: [
       {
         path: 'link',

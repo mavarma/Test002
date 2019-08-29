@@ -8,12 +8,17 @@
     {
       "id": 5,
       "title": "Second Reminder",
-      "description": "What are you doing ? Have you atteneded the today's meeting ?"
+      "description": "What are you doing ? Have you attended the today's meeting ?"
     },
     {
       "id": 6,
       "title": "Third Notification",
-      "description": "I am good, how are you ?"
+      "description": "I am good, how are you ? had your breakfast ?"
+    },
+    {
+      "id": 9,
+      "title": "Apple",
+      "description": "Apple test"
     }
   ]
 }

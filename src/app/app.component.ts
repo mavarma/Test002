@@ -1,3 +1,9 @@
+/*
+* Modification Details:
+* 1. This is the main component to run the application like root component
+*
+*/
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +12,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MacNotes';
+  title = 'MacNotes_Demo';
 }

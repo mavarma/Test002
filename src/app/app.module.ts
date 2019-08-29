@@ -1,3 +1,10 @@
+/*
+* Modification Details:
+* 1. This file is used to hold all the application related created modules, pipes, forms, directives, services and bootstrapping of component information
+*
+*/
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TruncatePipe } from './exponential-strength.pipe';
 import { AddUserComponent } from './add-user/add-user.component';
 import { FilterPipe} from './filter.pipe';
+import { SortPipe } from './sort.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +32,12 @@ import { FilterPipe} from './filter.pipe';
     RightComponent,
     TruncatePipe,
     AddUserComponent,
-    FilterPipe
+    FilterPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
